@@ -1,0 +1,32 @@
+@import 'variables';
+
+nav{
+    height: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 85px;
+    padding-left: 85px;
+    background-color: $blanco;
+    position: sticky;
+    top: 0;
+    div{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 8rem;
+            li{
+                color: $azul;
+                font-size: 14px;
+                padding: 10px;
+                text-decoration: none;
+                font-family: $titulo;
+                font-weight: 400;
+                &:hover{
+                    color: #9db1c5;
+                }
+            }
+        }
+    }
+}

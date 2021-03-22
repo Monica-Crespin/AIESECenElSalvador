@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <!--Tipografía-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Raleway&display=swap" rel="stylesheet"> 
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!--Menú de navegación-->
+    <div class="nav">
+        <nav class="navbar navbar-expand-sm">
+            <a href="#" class="navbar-brand">
+                <img src="../images/Blue-Logo.png" alt="Logo AIESEC" width="250px">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Menú desplegable-->
+            <div class="collapse navbar-collapse" id="navegacion">
+                <ul class="navbar-nav ml-auto">
+
+                    <!--Inicio-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <!--Acerca de nosotros-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de nosotros</a>
+                    </li>
+
+                    <!--Nuestros programas-->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Nuestros programas</a>
+                        <div class="dropdown-menu">
+                            <a href="gv.html" class="dropdown-item">Voluntario Global</a>
+                            <a href="#" class="dropdown-item">Global Talent</a>
+                        </div>
+                    </li>
+
+                    <!--Contáctanos-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctanos</a>
+                    </li>
+
+                    <!--Regístrate-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Regístrate</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--Formulario-->
+    <section class="Formulario">
+        <div class="image-encabezado2"></div>
+        <div class="caja2">
+            <div class="bloque1">
+
+                <!--Información-->
+                <div class="item1">
+                    <div class="logo">
+                        <a href="https://www.facebook.com/AIESECelsalvador/">
+                            <img src="../images/Logo_Facebook.png" alt="Logo Facebook" width="100px">
+                        </a>
+                        <a href="http://instagram.com/aiesecenelsalvador/">
+                            <img src="../images/Logo_Instagram.png" alt="Logo Instagram" width="100px">
+                        </a>
+                        <a href="https://www.linkedin.com/company/aiesecsv">
+                            <img src="../images/Logo_LinkedIn.png" alt="Logo LinkedIn" width="100px">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCwKIz7PD52q09dt4Jo6j5vg">
+                            <img src="../images/Logo_YouTube.png" alt="Logo YouTube" width="100px">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <h3>Desarrolla tu</h3>
+                        <h1>Liderazgo</h1>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="notificaciones" id="notificaciones">
+                        <label for="notificaciones">Quiero recibir notificaciones de los nuevos proyectos</label>
+                    </div>
+                    <div class="avisolegal">
+                        <small>Aviso legal:
+                            No utilizaremos tu dirección de correo electrónico
+                            para enviarte publicidad, promociones o notificaciones
+                            de nuestros proyectos a menos que selecciones la
+                            casilla superior.</small>
+                    </div>
+                </div>
+
+                <!--Formulario-->
+                <div class="item2">
+                    <form action="#">
+                        <h1>¡Decinos tus dudas!</h1>
+                        
+                        <!--Nombre-->
+                        <input type="text" name="name" id="name" placeholder="Compartinos tu nombre.">
+
+                        <!--Correo electrónico-->
+                        <input type="email" name="email" id="email" placeholder="Tu correo para escribirte.">
+
+                        <!--Asunto del mensaje-->
+                        <input type="text" name="messagetitle" id="messagetitle" placeholder="Asunto del mensaje.">
+
+                        <!--Información del mensaje-->
+                        <textarea name="message" id="message" rows="10" cols="30" style="width: 600px; height: 500px" placeholder="Información del mensaje."></textarea>
+
+                        <!--Btn-->
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

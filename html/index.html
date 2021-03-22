@@ -8,39 +8,136 @@
 
     <!--Tipografía-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Raleway&display=swap" rel="stylesheet"> 
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!--Menú de navegación-->
-    <nav>
-        <!--Logo-->
-        <div class="logo">
-            <div class="image-logo">
+    <div class="nav">
+        <nav class="navbar navbar-expand-sm">
+            <a href="#" class="navbar-brand">
                 <img src="../images/Blue-Logo.png" alt="Logo AIESEC" width="250px">
-            </div>
-        </div>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!--Enlaces-->
-        <div class="enlaces">
-            <a href="index.html">Inicio</a>
-            <a href="#">Acerca de nosotros</a>
-            <a href="#">Nuestros programas</a>
-            <a href="#">Regístrate</a>
-        </div>
-    </nav>
+            <!--Menú desplegable-->
+            <div class="collapse navbar-collapse" id="navegacion">
+                <ul class="navbar-nav ml-5">
+
+                    <!--Inicio-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <!--Acerca de nosotros-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de nosotros</a>
+                    </li>
+
+                    <!--Nuestros programas-->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Nuestros programas</a>
+                        <div class="dropdown-menu">
+                            <a href="gv.html" class="dropdown-item">Voluntario Global</a>
+                            <a href="#" class="dropdown-item">Global Talent</a>
+                        </div>
+                    </li>
+
+                    <!--Contáctanos-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctanos</a>
+                    </li>
+
+                    <!--Regístrate-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Regístrate</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
     <!--Encabezado-->
     <header>
         <div class="image-encabezado"></div>
         <div class="caja1">
-            <div class="titulo">Desarrolla tu liderazgo
-            </div>
-            <div class="substitulo">Desarróllate personal y profesionalmente en una experiencia intercultural en el extranjero.</div>
+            <h1>Desarrolla tu liderazgo.</h1>
+            <small>Desarróllate personal y profesionalmente en una experiencia intercultural en el extranjero.</small>
             <button>Inscríbete hoy</button>
         </div>
     </header>
+
+    <!--Nuestros programas-->
+    <section class="nuestrosprogramas">
+        <h2>Nuestros programas</h2>
+        <div class="bloque1">
+
+            <!--GV-->
+            <div class="item1">
+                <div class="img-gv"></div>
+                <div class="text">
+                    <p>Desarrolla tu liderazgo a través de un proyecto de voluntariado internacional, contribuyendo a los Objetivos de Desarrollo Sostenible.</p>
+                    <button>Conocé más</button>
+                </div>
+                
+            </div>
+
+            <!--GT-->
+            <div class="item2">
+                <div class="img-gt"></div>
+                <div class="text">
+                    <p>Desarrolla tu liderazgo mientras impulsas tu carrera profesional, con una pasantía internacional.</p>
+                    <button>Conocé más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Nuestros proyectos-->
+    <section class="nuestrosproyectos">
+        <h2>Nuestros proyectos</h2>
+        <div class="bloque2"></div>
+    </section>
+
+    <!--Testimonios de nuestros clientes-->
+    <section class="testimonios">
+        <h2>Testimonios de nuestros clientes</h2>
+        <div class="bloque3">
+
+            <!--Testimonio 1-->
+            <div class="item">
+                <div class="img-testimonio1"></div>
+                <div class="text2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vitae reprehenderit quas, provident sed perspiciatis vel voluptatem repudiandae maxime impedit dolorem commodi animi minus, in consectetur fuga maiores totam recusandae?</p>
+                </div>
+            </div>
+
+            <!--Testimonio 2-->
+            <div class="item">
+                <div class="img-testimonio2"></div>
+                <div class="text2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vitae reprehenderit quas, provident sed perspiciatis vel voluptatem repudiandae maxime impedit dolorem commodi animi minus, in consectetur fuga maiores totam recusandae?</p>
+                </div>
+            </div>
+
+            <!--Testimonio 3-->
+            <div class="item">
+                <div class="img-testimonio3"></div>
+                <div class="text2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vitae reprehenderit quas, provident sed perspiciatis vel voluptatem repudiandae maxime impedit dolorem commodi animi minus, in consectetur fuga maiores totam recusandae?</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

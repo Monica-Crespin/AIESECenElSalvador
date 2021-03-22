@@ -1,83 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/*Menú de navegación*/
-nav{
-    height: 100px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 85px;
-    padding-left: 85px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
+nav {
+  height: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 85px;
+  padding-left: 85px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
-.enlaces{
-    padding-right: 8rem;
+nav div ul {
+  padding-right: 8rem;
 }
 
-.enlaces a{
-    color: #027df2;
-    font-size: 1.2rem;
-    padding: 2rem;
-    text-decoration: none;
+nav div ul li {
+  color: #477dee;
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
-.enlaces a:hover{
-    color: #9db1c5;
+nav div ul li:hover {
+  color: #9db1c5;
 }
 
-/*Encabezado*/
-header{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/28894354663_0857e90e00_o.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/Img_Header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.caja1{
-    width: 2000px;
-    padding: 2rem;
-    text-align: center;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.55);
+header .caja1 {
+  width: 2000px;
+  padding: 2rem;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.55);
 }
 
-.caja1 .titulo{
-    font-size: 72px;
-    font-weight: 900;
+header .caja1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  font-weight: 900;
 }
 
-.caja1 .substitulo{
-    font-size: 35px;
-    font-weight: 400;
+header .caja1 small {
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
 }
 
-.caja1 button{
-    margin: 1rem 1.7rem;
-    padding: 1rem 3.5rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 1px;
-    background-color: #027df2;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
+header .caja1 button {
+  margin: 1rem 1.7rem;
+  padding: 1rem 3.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  background-color: #027df2;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
 }
 
-.caja1 button:hover{
-    background-color: #1167b8;
+header .caja1 button:hover {
+  background-color: #1167b8;
 }
+/*# sourceMappingURL=style.css.map */
