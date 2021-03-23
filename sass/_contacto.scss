@@ -1,1 +1,141 @@
 @import 'variables';
+
+.formulario{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/Img_Pág. Contacto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .bloque1{
+        width: 80%;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .item1{
+            .logo{
+                a{
+                    img{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .info{
+                h3{
+                    color: $blanco;
+                    font-family: $titulo;
+                    font-size: 42px;
+                    margin-top: 22px;
+                }
+                h1{
+                    color: $blanco;
+                    font-family: $titulo;
+                    font-size: 72px;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    margin-top: -20px;
+                }
+                .checkbox{
+                    margin-top: 49px;
+                    margin-bottom: 48px;
+                    width: 70%;
+                    display: flex;
+                    flex-direction: row;
+                    input[type="checkbox"]{
+                        cursor: pointer;
+                        border-radius: 20px;
+                        position: absolute;
+                        height: 20px;
+                        width: 20px;
+                        border: 2px solid $blanco;
+                        background: none;
+                        &:after{
+                            content: "/2713";
+                            color: $azul;
+                            right: 10px;
+                            top: 0px;
+                            position: absolute;
+                            display: none;
+                        }
+                        &:checked{
+                            background-color: $blanco;
+                            border: 2px solid $azul;
+                        }
+                    }
+                    label{
+                        padding-left: 32px;
+                        color: $blanco;
+                        font-family: $texto;
+                        font-size: 14px;
+                    }
+                }
+                .avisolegal{
+                    width: 70%;
+                    h6{
+                        font-family: $texto;
+                        font-weight: 900;
+                        font-size: 15px;
+                        color: $blanco;
+                    }
+                    small{
+                        margin-top: -32px;
+                        font-family: $texto;
+                        font-size: 15px;
+                        color: $blanco;
+                    }
+                }
+            }
+        }
+        .item2{
+            form{
+                h1{
+                    color: $blanco;
+                    font-family: $titulo;
+                    font-weight: 700;
+                    padding: 14px 0;
+                }
+                input{
+                    padding: 10px;
+                    margin-bottom: 14px;
+                    background: none;
+                    border-radius: 10px;
+                    border: 2px solid $blanco;
+                    color: $blanco;
+                    font-family: $texto;
+                    font-size: 14px;
+                }
+                textarea{
+                    padding: 10px;
+                    margin-bottom: 14px;
+                    background: none;
+                    border-radius: 10px;
+                    border: 2px solid $blanco;
+                    color: $blanco;
+                    font-family: $texto;
+                    font-size: 14px;
+                }
+                button{
+                    padding: 10px;
+                    margin-bottom: 14px;
+                    color: $blanco;
+                    font-family: $texto;
+                    font-size: 22px;
+                    background-color: $azul;
+                    border-radius: 10px;
+                    border: none;
+                    display: block;
+                    float: right;
+                    &:hover{
+                        background-color: $azul-hover;
+                        transition: ease-in-out .5s;
+                    }
+                }
+            }
+        }
+    }
+}

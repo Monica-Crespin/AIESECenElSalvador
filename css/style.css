@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,12 @@ nav {
   padding-right: 85px;
   padding-left: 85px;
   background-color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav div ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,12 +32,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-nav div ul {
   padding-right: 8rem;
 }
 
@@ -45,6 +46,26 @@ nav div ul li {
 
 nav div ul li:hover {
   color: #9db1c5;
+  -webkit-transition: ease-in-out .18s;
+  transition: ease-in-out .18s;
+  border-radius: .5rem;
+}
+
+nav div ul li a .dropdown-menu .dropdown-item {
+  padding: none;
+  margin: none;
+  color: #477dee;
+  font-size: .9rem;
+  text-transform: none;
+  letter-spacing: none;
+}
+
+nav div ul li a .dropdown-menu .dropdown-item:hover {
+  background-color: #9db1c5;
+  color: #ffffff;
+  -webkit-transition: ease-in-out .18s;
+  transition: ease-in-out .18s;
+  border-radius: .5rem;
 }
 
 header {
@@ -97,5 +118,174 @@ header .caja1 button {
 
 header .caja1 button:hover {
   background-color: #1167b8;
+}
+
+.formulario {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/Img_Pág. Contacto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.formulario .bloque1 {
+  width: 80%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario .bloque1 .item1 .logo a img {
+  cursor: pointer;
+}
+
+.formulario .bloque1 .item1 .info h3 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  margin-top: 22px;
+}
+
+.formulario .bloque1 .item1 .info h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: -20px;
+}
+
+.formulario .bloque1 .item1 .info .checkbox {
+  margin-top: 49px;
+  margin-bottom: 48px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.formulario .bloque1 .item1 .info .checkbox input[type="checkbox"] {
+  cursor: pointer;
+  border-radius: 20px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #ffffff;
+  background: none;
+}
+
+.formulario .bloque1 .item1 .info .checkbox input[type="checkbox"]:after {
+  content: "/2713";
+  color: #477dee;
+  right: 10px;
+  top: 0px;
+  position: absolute;
+  display: none;
+}
+
+.formulario .bloque1 .item1 .info .checkbox input[type="checkbox"]:checked {
+  background-color: #ffffff;
+  border: 2px solid #477dee;
+}
+
+.formulario .bloque1 .item1 .info .checkbox label {
+  padding-left: 32px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.formulario .bloque1 .item1 .info .avisolegal {
+  width: 70%;
+}
+
+.formulario .bloque1 .item1 .info .avisolegal h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.formulario .bloque1 .item1 .info .avisolegal small {
+  margin-top: -32px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.formulario .bloque1 .item2 form h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 14px 0;
+}
+
+.formulario .bloque1 .item2 form input {
+  padding: 10px;
+  margin-bottom: 14px;
+  background: none;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.formulario .bloque1 .item2 form textarea {
+  padding: 10px;
+  margin-bottom: 14px;
+  background: none;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.formulario .bloque1 .item2 form button {
+  padding: 10px;
+  margin-bottom: 14px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  background-color: #477dee;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  float: right;
+}
+
+.formulario .bloque1 .item2 form button:hover {
+  background-color: #9db1c5;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
 }
 /*# sourceMappingURL=style.css.map */

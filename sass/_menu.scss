@@ -24,7 +24,27 @@ nav{
                 font-family: $titulo;
                 font-weight: 400;
                 &:hover{
-                    color: #9db1c5;
+                    color: $azul-hover;
+                    transition: ease-in-out .18s;
+                    border-radius: .5rem;
+                }
+                a{
+                    .dropdown-menu{
+                        .dropdown-item{
+                            padding: none;
+                            margin: none;
+                            color: $azul;
+                            font-size: .9rem;
+                            text-transform: none;
+                            letter-spacing: none;
+                            &:hover{
+                                background-color: $azul-hover;
+                                color: $blanco;
+                                transition: ease-in-out .18s;
+                                border-radius: .5rem;
+                            }
+                        }
+                    }
                 }
             }
         }
