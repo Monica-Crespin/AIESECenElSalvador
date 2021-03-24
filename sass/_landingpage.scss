@@ -1,1 +1,120 @@
 @import 'variables';
+
+//Nuestros programas
+.nuestrosprogramas{
+    margin: 2.5rem 0;
+    h2{
+        padding: 12px 0;
+        font-family: $titulo;
+        font-size: 32px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        color: $azul;
+    }
+    .bloque1{
+        margin: 2.5rem 10rem 0 10rem;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        //GV
+        .item1{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 24px;
+            .img-gv{
+                width: 80%;
+                height: 740px;
+                background-image: url('../images/GV.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
+            .text{
+                margin-top: 2.5rem;
+                width: 80%;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p{
+                    padding: 8px;
+                    color: $negro;
+                    text-align: center;
+                    font-family: $texto;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                button{
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 1px;
+                    background-color: $negro;
+                    color: $blanco;
+                    font-family: $texto;
+                    font-size: 14px;
+                    padding: 20px;
+                    &:hover{
+                        background-color: $negro-hover;
+                        transition: ease-in-out .5s;
+                    }
+                }
+            }
+        }
+
+        //GT
+        .item2{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 24px;
+            .img-gt{
+                width: 100%;
+                height: 740px;
+                background-image: url('../images/GT.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
+            .text{
+                margin-top: 2.5rem;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p{
+                    padding: 8px;
+                    color: $negro;
+                    text-align: center;
+                    font-family: $texto;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                button{
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 1px;
+                    background-color: $negro;
+                    color: $blanco;
+                    font-family: $texto;
+                    font-size: 14px;
+                    padding: 20px;
+                    &:hover{
+                        background-color: $negro-hover;
+                        transition: ease-in-out .5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Nuestros proyectos
+//Testimonios de nuestros clientes

@@ -30,12 +30,13 @@ header{
             cursor: pointer;
             border: none;
             border-radius: 1px;
-            background-color: #027df2;
+            background-color: $azul;
             color: $blanco;
             font-family: $texto;
             font-size: 20px;
             &:hover{
-                background-color: #1167b8;
+                background-color: $azul-hover;
+                transition: ease-in-out .5s;
             }
         }
     }
