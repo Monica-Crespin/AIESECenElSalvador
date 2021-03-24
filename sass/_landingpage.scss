@@ -13,102 +13,108 @@
         color: $azul;
     }
     .bloque1{
-        margin: 2.5rem 10rem 0 10rem;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: auto auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        //GV
-        .item1{
+        margin: 4rem;
+        .caja2{
+            display: grid;
+            grid-column-gap: 70px;
+            grid-template-columns: auto auto;
             display: flex;
-            flex-direction: column;
-            padding-bottom: 24px;
-            .img-gv{
-                width: 80%;
-                height: 740px;
-                background-image: url('../images/GV.jpg');
-                background-size: cover;
-                background-position: center;
-                background-attachment: scroll;
-            }
-            .text{
-                margin-top: 2.5rem;
-                width: 80%;
-                height: 100px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            //GV
+            .item1{
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
-                p{
-                    padding: 8px;
-                    color: $negro;
-                    text-align: center;
-                    font-family: $texto;
-                    font-size: 16px;
-                    line-height: 20px;
+                align-items: center;
+                padding-bottom: 24px;
+                .img-gv{
+                    width: 300px;
+                    height: 300px;
+                    background-image: url('../images/GV.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: scroll;
                 }
-                button{
-                    cursor: pointer;
-                    border: none;
-                    border-radius: 1px;
-                    background-color: $negro;
-                    color: $blanco;
-                    font-family: $texto;
-                    font-size: 14px;
-                    padding: 20px;
-                    &:hover{
-                        background-color: $negro-hover;
-                        transition: ease-in-out .5s;
+                .text{
+                    margin-top: 2.5rem;
+                    width: 300px;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        padding: 8px;
+                        color: $negro;
+                        text-align: center;
+                        font-family: $texto;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                    button{
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 1px;
+                        background-color: $negro;
+                        color: $blanco;
+                        font-family: $texto;
+                        font-size: 14px;
+                        padding: 20px;
+                        &:hover{
+                            background-color: $negro-hover;
+                            transition: ease-in-out .5s;
+                        }
                     }
                 }
             }
-        }
 
-        //GT
-        .item2{
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 24px;
-            .img-gt{
-                width: 100%;
-                height: 740px;
-                background-image: url('../images/GT.jpg');
-                background-size: cover;
-                background-position: center;
-                background-attachment: scroll;
-            }
-            .text{
-                margin-top: 2.5rem;
-                width: 100%;
-                height: 100px;
+            //GT
+            .item2{
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                padding-bottom: 24px;
                 justify-content: center;
-                p{
-                    padding: 8px;
-                    color: $negro;
-                    text-align: center;
-                    font-family: $texto;
-                    font-size: 16px;
-                    line-height: 20px;
+                align-items: center;
+                .img-gt{
+                    width: 300px;
+                    height: 300px;
+                    background-image: url('../images/GT.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: scroll;
                 }
-                button{
-                    cursor: pointer;
-                    border: none;
-                    border-radius: 1px;
-                    background-color: $negro;
-                    color: $blanco;
-                    font-family: $texto;
-                    font-size: 14px;
-                    padding: 20px;
-                    &:hover{
-                        background-color: $negro-hover;
-                        transition: ease-in-out .5s;
+                .text{
+                    margin-top: 2.5rem;
+                    width: 300px;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        padding: 8px;
+                        color: $negro;
+                        text-align: center;
+                        font-family: $texto;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                    button{
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 1px;
+                        background-color: $negro;
+                        color: $blanco;
+                        font-family: $texto;
+                        font-size: 14px;
+                        padding: 20px;
+                        &:hover{
+                            background-color: $negro-hover;
+                            transition: ease-in-out .5s;
+                        }
                     }
                 }
             }
@@ -118,3 +124,106 @@
 
 //Nuestros proyectos
 //Testimonios de nuestros clientes
+.testimonios{
+    margin: 2.5rem 0;
+    h2{
+        padding: 12px 0;
+        font-family: $titulo;
+        font-size: 32px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        color: $azul;
+    }
+    .bloque3{
+        margin: 2.5rem;
+        display: grid;
+        grid-column-gap: 90px;
+        grid-template-columns: auto auto auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        //Testimonio 1
+        .item{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 24px;
+            .img-testimonio1{
+                width: 200px;
+                height: 200px;
+                margin-bottom: 2.5rem;
+                border-radius: 50%;
+                background-image: url('../images/28898143994_d55d9a71d7_o.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
+            .text2{
+                width: 200px;
+                p{
+                    font-family: $texto;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $negro;
+                    text-align: center;
+                }
+            }
+        }
+
+        //Testimonio 2
+        .item{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 24px;
+            .img-testimonio2{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                margin-bottom: 2.5rem;
+                background-image: url('../images/49015530522_d2b7e1d2bc_o.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
+            .text2{
+                width: 200px;
+                p{
+                    font-family: $texto;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $negro;
+                    text-align: center;
+                }
+            }
+        }
+
+        //Testimonio 3
+        .item{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 24px;
+            .img-testimonio3{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                margin-bottom: 2.5rem;
+                background-image: url('../images/28899552964_29fe15d363_o.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
+            .text2{
+                width: 200px;
+                p{
+                    font-family: $texto;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $negro;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -137,10 +137,13 @@ header .caja1 button:hover {
 }
 
 .nuestrosprogramas .bloque1 {
-  margin: 2.5rem 10rem 0 10rem;
+  margin: 4rem;
+}
+
+.nuestrosprogramas .bloque1 .caja2 {
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
+  grid-column-gap: 70px;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   display: -webkit-box;
@@ -158,7 +161,7 @@ header .caja1 button:hover {
           align-items: center;
 }
 
-.nuestrosprogramas .bloque1 .item1 {
+.nuestrosprogramas .bloque1 .caja2 .item1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,21 +169,27 @@ header .caja1 button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 24px;
 }
 
-.nuestrosprogramas .bloque1 .item1 .img-gv {
-  width: 80%;
-  height: 740px;
+.nuestrosprogramas .bloque1 .caja2 .item1 .img-gv {
+  width: 300px;
+  height: 300px;
   background-image: url("../images/GV.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
 }
 
-.nuestrosprogramas .bloque1 .item1 .text {
+.nuestrosprogramas .bloque1 .caja2 .item1 .text {
   margin-top: 2.5rem;
-  width: 80%;
+  width: 300px;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,7 +206,7 @@ header .caja1 button:hover {
           justify-content: center;
 }
 
-.nuestrosprogramas .bloque1 .item1 .text p {
+.nuestrosprogramas .bloque1 .caja2 .item1 .text p {
   padding: 8px;
   color: #2a2a2a;
   text-align: center;
@@ -206,7 +215,7 @@ header .caja1 button:hover {
   line-height: 20px;
 }
 
-.nuestrosprogramas .bloque1 .item1 .text button {
+.nuestrosprogramas .bloque1 .caja2 .item1 .text button {
   cursor: pointer;
   border: none;
   border-radius: 1px;
@@ -217,13 +226,120 @@ header .caja1 button:hover {
   padding: 20px;
 }
 
-.nuestrosprogramas .bloque1 .item1 .text button:hover {
+.nuestrosprogramas .bloque1 .caja2 .item1 .text button:hover {
   background-color: #2a2a2a8f;
   -webkit-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
 }
 
-.nuestrosprogramas .bloque1 .item2 {
+.nuestrosprogramas .bloque1 .caja2 .item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nuestrosprogramas .bloque1 .caja2 .item2 .img-gt {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/GT.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.nuestrosprogramas .bloque1 .caja2 .item2 .text {
+  margin-top: 2.5rem;
+  width: 300px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nuestrosprogramas .bloque1 .caja2 .item2 .text p {
+  padding: 8px;
+  color: #2a2a2a;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nuestrosprogramas .bloque1 .caja2 .item2 .text button {
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.nuestrosprogramas .bloque1 .caja2 .item2 .text button:hover {
+  background-color: #2a2a2a8f;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+.testimonios {
+  margin: 2.5rem 0;
+}
+
+.testimonios h2 {
+  padding: 12px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: #477dee;
+}
+
+.testimonios .bloque3 {
+  margin: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 90px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonios .bloque3 .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,19 +350,30 @@ header .caja1 button:hover {
   padding-bottom: 24px;
 }
 
-.nuestrosprogramas .bloque1 .item2 .img-gt {
-  width: 100%;
-  height: 740px;
-  background-image: url("../images/GT.jpg");
+.testimonios .bloque3 .item .img-testimonio1 {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2.5rem;
+  border-radius: 50%;
+  background-image: url("../images/28898143994_d55d9a71d7_o.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
 }
 
-.nuestrosprogramas .bloque1 .item2 .text {
-  margin-top: 2.5rem;
-  width: 100%;
-  height: 100px;
+.testimonios .bloque3 .item .text2 {
+  width: 200px;
+}
+
+.testimonios .bloque3 .item .text2 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+.testimonios .bloque3 .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,38 +381,64 @@ header .caja1 button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-bottom: 24px;
 }
 
-.nuestrosprogramas .bloque1 .item2 .text p {
-  padding: 8px;
-  color: #2a2a2a;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+.testimonios .bloque3 .item .img-testimonio2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+  background-image: url("../images/49015530522_d2b7e1d2bc_o.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
 }
 
-.nuestrosprogramas .bloque1 .item2 .text button {
-  cursor: pointer;
-  border: none;
-  border-radius: 1px;
-  background-color: #2a2a2a;
-  color: #ffffff;
+.testimonios .bloque3 .item .text2 {
+  width: 200px;
+}
+
+.testimonios .bloque3 .item .text2 p {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  padding: 20px;
+  line-height: 18px;
+  color: #2a2a2a;
+  text-align: center;
 }
 
-.nuestrosprogramas .bloque1 .item2 .text button:hover {
-  background-color: #2a2a2a8f;
-  -webkit-transition: ease-in-out .5s;
-  transition: ease-in-out .5s;
+.testimonios .bloque3 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 24px;
+}
+
+.testimonios .bloque3 .item .img-testimonio3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+  background-image: url("../images/28899552964_29fe15d363_o.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.testimonios .bloque3 .item .text2 {
+  width: 200px;
+}
+
+.testimonios .bloque3 .item .text2 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2a2a2a;
+  text-align: center;
 }
 
 .formulario {
