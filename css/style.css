@@ -441,6 +441,306 @@ header .caja1 button:hover {
   text-align: center;
 }
 
+.encabezado {
+  height: 90vh;
+  background-image: url("../images/Img_About Us.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.encabezado .bloque1 {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.encabezado .bloque1 .item1 h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 42px;
+  text-align: left;
+  line-height: 52px;
+}
+
+.encabezado .bloque1 .item2 p {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  text-align: left;
+  line-height: 52px;
+}
+
+.lideresjuveniles h1 {
+  color: #477dee;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  line-height: 42px;
+}
+
+.lideresjuveniles h2 {
+  color: #2a2a2a;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  line-height: 32px;
+  padding-bottom: 10px;
+}
+
+.lideresjuveniles .bloque2 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.lideresjuveniles .bloque2 .item6 {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lideresjuveniles .bloque2 .item6 .info h3 {
+  color: #2a2a2a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lideresjuveniles .bloque2 .item6 .info p {
+  color: #2a2a2a;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.lideresjuveniles .bloque2 .img-lideres-juveniles {
+  padding: 0 10px;
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/Cualidades de un líder-01.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.lideresjuveniles .bloque2 .item7 {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lideresjuveniles .bloque2 .item7 .info h3 {
+  color: #2a2a2a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lideresjuveniles .bloque2 .item7 .info p {
+  color: #2a2a2a;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.voluntario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.voluntario .bloque3 {
+  width: 90%;
+}
+
+.voluntario .bloque3 .img-logo-gv {
+  padding-right: 10px;
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/GV_vertical_color.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.voluntario .bloque3 .item8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.voluntario .bloque3 .item8 h2 {
+  color: #2a2a2a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+.voluntario .bloque3 .item8 p {
+  color: #2a2a2a;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.voluntario .bloque3 .item8 button {
+  margin: 1rem 1.7rem;
+  padding: 1rem 3.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+.voluntario .bloque3 .item8 button:hover {
+  background-color: #2a2a2a8f;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+.becario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.becario .bloque4 {
+  width: 90%;
+}
+
+.becario .bloque4 .img-logo-gt {
+  padding-right: 10px;
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/product_GT-Vertical-color.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.becario .bloque4 .item8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.becario .bloque4 .item8 h2 {
+  color: #2a2a2a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+.becario .bloque4 .item8 p {
+  color: #2a2a2a;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.becario .bloque4 .item8 button {
+  margin: 1rem 1.7rem;
+  padding: 1rem 3.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+.becario .bloque4 .item8 button:hover {
+  background-color: #2a2a2a8f;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
 .formulario {
   height: 89vh;
   display: -webkit-box;
