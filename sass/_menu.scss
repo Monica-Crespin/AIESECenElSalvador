@@ -1,50 +1,154 @@
 @import 'variables';
 
-nav{
-    height: 100px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 85px;
-    padding-left: 85px;
-    background-color: $blanco;
-    position: sticky;
+.degradado{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
     top: 0;
-    div{
-        ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding-right: 8rem;
-            li{
-                color: $azul;
-                font-size: 14px;
-                padding: 10px;
-                text-decoration: none;
+    left: 0;
+    display: none;
+    z-index: 800;
+    transition: ease-in-out .25s;
+}
+
+.movil{
+    width: 80%;
+    max-width: 375px;
+    height: 100vh;
+    background: $blanco;
+    position: fixed;
+    top: 0;
+    left: -80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+    transition: ease-in-out .15s;
+    a{
+        width: 100%;
+        padding: 2rem;
+        cursor: pointer;
+        font-family: $titulo;
+        color: $azul;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: ease-in-out .15s;
+        &:hover{
+            color: $azul;
+        }
+    }
+    .salir{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 2rem;
+        font-family: $titulo;
+        font-weight: 700;
+        font-size: 1rem;
+        color: $blanco;
+        background: $azul-degradado;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: ease-in-out .15s;
+        text-transform: uppercase;
+        &:hover{
+            background: $azul-hover;
+        }
+    }
+}
+
+.btnMenu{
+    cursor: pointer;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $blanco;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 600;
+    i{
+        font-size: 1.5rem;
+        color: $azul;
+    }
+}
+
+.escritorio{
+    display: none;
+}
+
+@media screen and (min-width: 375px) {
+    //Menú móvil
+    .movil{
+        display: flex;
+    }
+    .btnMenu{
+        display: flex;
+    }
+    .degradado{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    //Menú móvil
+    .movil{
+        display: none;
+    }
+    .btnMenu{
+        display: none;
+    }
+    .degradado{
+        display: none;
+    }
+
+    //Menú escritorio
+    .escritorio{
+        height: 100px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 85px;
+        padding-left: 85px;
+        background-color: $blanco;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 8rem;
+        .enlaces{   
+            padding: 10px;         
+            &:hover{
+                color: $azul-hover;
+                transition: ease-in-out .18s;
+                border-radius: .5rem;
+            }
+            a{
                 font-family: $titulo;
                 font-weight: 400;
+                padding: 5px;
+                margin: none;
+                color: $azul;
+                font-size: .8rem;
+                text-decoration: none;
+                text-transform: none;
+                letter-spacing: none;
                 &:hover{
-                    color: $azul-hover;
+                    background-color: $azul-hover;
+                    color: $blanco;
                     transition: ease-in-out .18s;
                     border-radius: .5rem;
-                }
-                a{
-                    .dropdown-menu{
-                        .dropdown-item{
-                            padding: none;
-                            margin: none;
-                            color: $azul;
-                            font-size: .9rem;
-                            text-transform: none;
-                            letter-spacing: none;
-                            &:hover{
-                                background-color: $azul-hover;
-                                color: $blanco;
-                                transition: ease-in-out .18s;
-                                border-radius: .5rem;
-                            }
-                        }
-                    }
                 }
             }
         }

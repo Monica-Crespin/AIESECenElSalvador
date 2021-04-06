@@ -10,62 +10,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Raleway&display=swap" rel="stylesheet"> 
 
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <!--Icono-->
+    <link rel="shortcut icon" href="../images/Icon AIESEC El Salvador Website_Icono.svg" type="image/x-icon">
 
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!--Menú de navegación-->
-    <div class="nav">
-        <nav class="navbar navbar-expand-sm">
-            <a href="#" class="navbar-brand">
-                <img src="../images/Blue-Logo.png" alt="Logo AIESEC" width="250px">
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navegacion">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!--Menú escritorio-->
+    <nav class="escritorio">
+        <div class="logo">
+            <img src="../images/Blue-Logo.png" alt="Logo AIESEC" width="250px">
+        </div>
+        <div class="enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="acercadenosotros.html">Acerca de nosotros</a>
+            <a href="gv.html">Voluntario Global</a>
+            <a href="gt.html">Global Talent</a>
+            <a href="contacto.html">Contáctanos</a>
+            <a href="#">Regístrate</a>
+        </div>
+    </nav>
 
-            <!--Menú desplegable-->
-            <div class="collapse navbar-collapse" id="navegacion">
-                <ul class="navbar-nav ml-auto">
+    <div class="degradado" id="degradado"></div>
 
-                    <!--Inicio-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
+    <!--Menú móvil-->
+    <nav class="movil" id="movil">
+        <a href="index.html" class="enlace">Inicio</a>
+        <a href="acercadenosotros.html" class="enlace">Acerca de nosotros</a>
+        <a href="gv.html" class="enlace">Voluntario Global</a>
+        <a href="gt.html" class="enlace">Global Talent</a>
+        <a href="contacto.html" class="enlace">Contáctanos</a>
+        <div class="salir" id="salir">Salir</div>
+    </nav>
 
-                    <!--Acerca de nosotros-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="acercadenosotros.html">Acerca de nosotros</a>
-                    </li>
-
-                    <!--Nuestros programas-->
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Nuestros programas</a>
-                        <div class="dropdown-menu">
-                            <a href="gv.html" class="dropdown-item">Voluntario Global</a>
-                            <a href="gt.html" class="dropdown-item">Global Talent</a>
-                        </div>
-                    </li>
-
-                    <!--Contáctanos-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contáctanos</a>
-                    </li>
-
-                    <!--Regístrate-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Regístrate</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    <div class="btnMenu" id="btnMenu"><i class="fas fa-bars"></i></div>
 
     <!--Formulario-->
     <section class="formulario">
@@ -128,5 +110,8 @@
             </div>
         </div>
     </section>
+
+    <!--JavaScript-->
+    <script src="../js/style.js"></script>
 </body>
 </html>
