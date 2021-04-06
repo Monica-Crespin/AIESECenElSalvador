@@ -2,7 +2,7 @@
 
 //¿Por qué ser un Voluntario Global?
 .gv{
-    height: 90vh;
+    padding: 4rem;
     background-color: $gv;
     .caja1{
         padding: 20px;
@@ -36,6 +36,7 @@
                     background-size: cover;
                     background-position: center;
                     background-attachment: scroll;
+                    border-radius: 2%;
                 }
                 .img-experimentar{
                     width: 300px;
@@ -44,6 +45,7 @@
                     background-size: cover;
                     background-position: center;
                     background-attachment: scroll;
+                    border-radius: 2%;
                 }
                 .img-retarte{
                     width: 300px;
@@ -52,6 +54,7 @@
                     background-size: cover;
                     background-position: center;
                     background-attachment: scroll;
+                    border-radius: 2%;
                 }
             }
         }
@@ -63,7 +66,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 32px;
+            padding: 50px;
+            border-radius: 2%;
             .img-bloque2{
                 width: 300px;
                 height: 300px;

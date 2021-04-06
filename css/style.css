@@ -962,7 +962,7 @@ header .caja1 button:hover {
 }
 
 .gv {
-  height: 90vh;
+  padding: 4rem;
   background-color: #f7593f;
 }
 
@@ -1016,6 +1016,7 @@ header .caja1 button:hover {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+  border-radius: 2%;
 }
 
 .gv .caja1 .bloque1 .item1 .img-experimentar {
@@ -1025,6 +1026,7 @@ header .caja1 button:hover {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+  border-radius: 2%;
 }
 
 .gv .caja1 .bloque1 .item1 .img-retarte {
@@ -1034,6 +1036,7 @@ header .caja1 button:hover {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+  border-radius: 2%;
 }
 
 .gv .caja1 .bloque2 {
@@ -1051,7 +1054,8 @@ header .caja1 button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px;
+  padding: 50px;
+  border-radius: 2%;
 }
 
 .gv .caja1 .bloque2 .img-bloque2 {
@@ -1435,6 +1439,464 @@ header .caja1 button:hover {
 }
 
 .proyectos .caja2 .bloque3 .item .info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #2a2a2a;
+  line-height: 21px;
+}
+
+.gt {
+  padding: 4rem;
+  background-color: #0bb8c0;
+}
+
+.gt .caja1 {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.gt .caja1 .bloque1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gt .caja1 .bloque1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 16px;
+  text-align: center;
+}
+
+.gt .caja1 .bloque1 .item1 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 14px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.gt .caja1 .bloque1 .item1 .img1 {
+  width: 300px;
+  height: 400px;
+  background-color: #ffffff;
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  border-radius: 2%;
+}
+
+.gt .caja1 .bloque1 .item1 .img2 {
+  width: 300px;
+  height: 400px;
+  background-color: #ffffff;
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  border-radius: 2%;
+}
+
+.gt .caja1 .bloque1 .item1 .img3 {
+  width: 300px;
+  height: 400px;
+  background-color: #ffffff;
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  border-radius: 2%;
+}
+
+.gt .caja1 .bloque2 {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  border-radius: 2%;
+}
+
+.gt .caja1 .bloque2 .img4 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url("../images/49015530522_d2b7e1d2bc_o.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt .caja1 .bloque2 p {
+  padding-top: 20px;
+  font-family: "Raleway", sans-serif;
+  color: #2a2a2a;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.gt-fact {
+  margin: 20px 0;
+  height: 90vh;
+}
+
+.gt-fact .img-fact {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Img_Fact.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt-paises {
+  margin-bottom: 20px;
+}
+
+.gt-paises h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  color: #0bb8c0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.gt-paises .banderas {
+  padding-left: 22px;
+  padding-top: 22px;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 10px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.gt-paises .banderas .img-ecuador {
+  width: 400px;
+  height: 300px;
+  background-image: url("../images/Bandera de Ecuador.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt-paises .banderas .img-bolivia {
+  width: 400px;
+  height: 300px;
+  background-image: url("../images/Bandera de Bolivia.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt-paises .banderas .img-guatemala {
+  width: 400px;
+  height: 300px;
+  background-image: url("../images/Bandera de Guatemala.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt-proyectos {
+  margin: 20px 0;
+}
+
+.gt-proyectos h1 {
+  padding: 52px 0;
+  font-family: "Montserrat", sans-serif;
+  color: #f7593f;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gt-proyectos .caja2 {
+  margin: 0 295px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gt-proyectos .caja2 .item {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.gt-proyectos .caja2 .item .img1 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt-proyectos .caja2 .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.gt-proyectos .caja2 .item .info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  text-align: left;
+}
+
+.gt-proyectos .caja2 .item .info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #2a2a2a;
+  line-height: 21px;
+}
+
+.gt-proyectos .caja2 .item {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.gt-proyectos .caja2 .item .img2 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt-proyectos .caja2 .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.gt-proyectos .caja2 .item .info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  text-align: left;
+}
+
+.gt-proyectos .caja2 .item .info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #2a2a2a;
+  line-height: 21px;
+}
+
+.gt-proyectos .caja2 .item {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.gt-proyectos .caja2 .item .img3 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt-proyectos .caja2 .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.gt-proyectos .caja2 .item .info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  text-align: left;
+}
+
+.gt-proyectos .caja2 .item .info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #2a2a2a;
+  line-height: 21px;
+}
+
+.gt-proyectos .caja2 .item {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.gt-proyectos .caja2 .item .img4 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt-proyectos .caja2 .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.gt-proyectos .caja2 .item .info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  text-align: left;
+}
+
+.gt-proyectos .caja2 .item .info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #2a2a2a;
+  line-height: 21px;
+}
+
+.gt-proyectos .caja2 .item {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.gt-proyectos .caja2 .item .img5 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.gt-proyectos .caja2 .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.gt-proyectos .caja2 .item .info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  text-align: left;
+}
+
+.gt-proyectos .caja2 .item .info p {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #2a2a2a;
