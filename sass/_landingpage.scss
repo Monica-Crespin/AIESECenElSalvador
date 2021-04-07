@@ -227,3 +227,49 @@
         }
     }
 }
+
+//RESPONSIVE
+//Testimonios de nuestros clientes
+
+@media screen and (max-width: 768px) {
+    .testimonios{
+        .bloque3{
+            display: grid;
+            grid-gap: 0;
+            grid-template-columns: none;
+
+            //Testimonio 1
+            .item{
+                .img-testimonio1{
+                    width: 350px;
+                    height: 350px;
+                }
+                .text2{
+                    width: 350px;
+                }
+            }
+
+            //Testimonio 2
+            .item{
+                .img-testimonio2{
+                    width: 350px;
+                    height: 350px;
+                }
+                .text2{
+                    width: 350px;
+                }
+            }
+
+            //Testimonio 3
+            .item{
+                .img-testimonio3{
+                    width: 350px;
+                    height: 350px;
+                }
+                .text2{
+                    width: 350px;
+                }
+            }
+        }
+    }
+}

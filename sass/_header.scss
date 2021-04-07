@@ -66,22 +66,3 @@ header{
         }
     }
 }
-
-@media screen and (max-width: 375px) {
-    header{
-        max-width: 375px;
-        .caja1{
-            h1{
-                font-size: 32px;
-            }
-            small{
-                margin-left: 3rem;
-                font-size: 15px;
-            }
-            button{
-                padding: 1rem;
-                margin-right: 0;
-            }
-        }
-    }
-}
