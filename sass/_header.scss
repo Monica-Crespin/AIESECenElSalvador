@@ -30,13 +30,57 @@ header{
             cursor: pointer;
             border: none;
             border-radius: 1px;
-            background-color: $azul;
+            background-color: #027df2;
             color: $blanco;
             font-family: $texto;
             font-size: 20px;
             &:hover{
-                background-color: $azul-hover;
-                transition: ease-in-out .5s;
+                background-color: #1167b8;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 768px;
+        .caja1{
+            background: none;
+            text-align: right;
+            h1{
+                font-size: 52px;
+            }
+            small{
+                margin-left: 1.8rem;
+                font-size: 21px;
+            }
+            button{
+                right: 0;
+                background-color: $blanco;
+                color: $azul;
+                font-weight: 700;
+                &:hover{
+                    color: $blanco;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header{
+        max-width: 375px;
+        .caja1{
+            h1{
+                font-size: 32px;
+            }
+            small{
+                margin-left: 3rem;
+                font-size: 15px;
+            }
+            button{
+                padding: 1rem;
+                margin-right: 0;
             }
         }
     }

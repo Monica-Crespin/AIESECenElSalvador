@@ -246,16 +246,57 @@ header .caja1 button {
   cursor: pointer;
   border: none;
   border-radius: 1px;
-  background-color: #477dee;
+  background-color: #027df2;
   color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
 
 header .caja1 button:hover {
-  background-color: #2d55ac;
-  -webkit-transition: ease-in-out .5s;
-  transition: ease-in-out .5s;
+  background-color: #1167b8;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 768px;
+  }
+  header .caja1 {
+    background: none;
+    text-align: right;
+  }
+  header .caja1 h1 {
+    font-size: 52px;
+  }
+  header .caja1 small {
+    margin-left: 1.8rem;
+    font-size: 21px;
+  }
+  header .caja1 button {
+    right: 0;
+    background-color: #ffffff;
+    color: #477dee;
+    font-weight: 700;
+  }
+  header .caja1 button:hover {
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    max-width: 375px;
+  }
+  header .caja1 h1 {
+    font-size: 32px;
+  }
+  header .caja1 small {
+    margin-left: 3rem;
+    font-size: 15px;
+  }
+  header .caja1 button {
+    padding: 1rem;
+    margin-right: 0;
+  }
 }
 
 .nuestrosprogramas {
