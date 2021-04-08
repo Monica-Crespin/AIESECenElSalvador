@@ -463,6 +463,103 @@ header .caja1 button:hover {
   transition: ease-in-out .5s;
 }
 
+.nuestrosproyectos {
+  margin: 2.5rem 0;
+}
+
+.nuestrosproyectos h2 {
+  padding: 12px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: #477dee;
+}
+
+.nuestrosproyectos .container #slider {
+  margin-top: 10%;
+}
+
+.nuestrosproyectos .container #slider .content-area {
+  position: relative;
+}
+
+.nuestrosproyectos .container #slider .content-area a img {
+  width: 500px;
+  height: 300px;
+}
+
+.nuestrosproyectos .container #slider .content-area a .custom-overlay {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(71, 125, 238, 0.7);
+  opacity: 0;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  height: 70%;
+}
+
+.nuestrosproyectos .container #slider .content-area a .custom-overlay:hover {
+  opacity: 1;
+}
+
+.nuestrosproyectos .container #slider .content-area a .custom-overlay .content-text {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.nuestrosproyectos .container #slider .content-area a .custom-overlay .content-text p {
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  line-height: 1.6em;
+  margin-top: 3%;
+  color: #ffffff;
+}
+
+.nuestrosproyectos .container #slider .content-area a .custom-overlay .content-text h4 {
+  position: relative;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+.nuestrosproyectos .container #slider .content-area a .custom-overlay .content-text h4:before {
+  content: '';
+  padding-right: 10px;
+}
+
+.nuestrosproyectos .container #slider .content-area a .custom-overlay .content-text h4:after {
+  content: '';
+  padding-left: 10px;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.owl-dot {
+  display: inline-block;
+  height: 6px !important;
+  width: 60px !important;
+  background-color: #477dee !important;
+  opacity: 0.8;
+  margin: 0 5px;
+}
+
+.owl-dot.active {
+  background-color: #2d55ac !important;
+}
+
 .testimonios {
   margin: 2.5rem 0;
 }
