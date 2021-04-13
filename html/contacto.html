@@ -31,7 +31,6 @@
             <a href="gv.html">Voluntario Global</a>
             <a href="gt.html">Global Talent</a>
             <a href="contacto.html">Contáctanos</a>
-            <a href="#">Regístrate</a>
         </div>
     </nav>
 
@@ -89,23 +88,23 @@
 
             <!--Formulario-->
             <div class="item2">
-                <form action="#">
+                <form name="form">
                     <h1>¡Decinos tus dudas!</h1>
                     
                     <!--Nombre-->
-                    <input type="text" name="name" id="name" style="width: 700px" placeholder="Compartinos tu nombre."><br>
+                    <input type="text" name="name" id="nombre" style="width: 700px" placeholder="Compartinos tu nombre." required><br>
 
                     <!--Correo electrónico-->
-                    <input type="email" name="email" id="email" style="width: 700px" placeholder="Tu correo para escribirte."><br>
+                    <input type="email" name="email" id="correo" style="width: 700px" placeholder="Tu correo para escribirte." required><br>
 
                     <!--Asunto del mensaje-->
-                    <input type="text" name="messagetitle" id="messagetitle" style="width: 700px" placeholder="Asunto del mensaje."><br>
+                    <input type="text" name="messagetitle" id="mensajeTitulo" style="width: 700px" placeholder="Asunto del mensaje." required><br>
 
                     <!--Información del mensaje-->
-                    <textarea name="message" id="message" rows="10" cols="30" style="width: 700px; height: 250px" placeholder="Información del mensaje."></textarea><br>
+                    <textarea name="message" id="mensajeInformacion" rows="10" cols="30" style="width: 700px; height: 250px" placeholder="Información del mensaje." required></textarea><br>
 
                     <!--Btn-->
-                    <button type="submit" style="width: 150px" >Enviar</button>
+                    <button type="submit" id="btnForm" style="width: 150px" onsubmit="validarFormulario()">Enviar</button>
                 </form>
             </div>
         </div>

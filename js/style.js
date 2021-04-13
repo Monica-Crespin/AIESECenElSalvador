@@ -4,7 +4,7 @@ const menu = document.querySelector('#movil');
 const degradado = document.querySelector('#degradado');
 const btnMenu = document.querySelector('#btnMenu');
 const btnSalir = document.querySelector('#salir');
-const enlaces = document.querySelectorAll('.enlace')
+const enlaces = document.querySelectorAll('.enlace');
 
 //Eventos
 btnMenu.addEventListener('click', mostrarMenu);
@@ -34,4 +34,13 @@ function ocultarMenu(){
     setTimeout(()=>{
         degradado.style.display = 'none';
     }, 250);
+}
+
+//Validación del formulario
+function validarFormulario() {
+    const e = document.forms ['form'] ['name'] ['email'] ['messagetitle'] ['message'].value;
+
+    if (e === '') {
+        return false;
+    }
 }
