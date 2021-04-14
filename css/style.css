@@ -1180,6 +1180,7 @@ header .caja1 button:hover {
 }
 
 .formulario .bloque1 .item2 form button {
+  cursor: pointer;
   padding: 10px;
   margin-bottom: 14px;
   color: #ffffff;
@@ -1204,58 +1205,8 @@ header .caja1 button:hover {
   }
 }
 
-.envioformulario {
-  height: 88vh;
-  background-image: url("../images/Img_Aviso del formulario.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.envioformulario .caja1 {
-  margin-top: 299px;
-}
-
-.envioformulario .caja1 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 79px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.envioformulario .caja1 h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 119px;
-  text-align: center;
-  color: #ffffff;
-  margin-top: -33px;
-}
-
-.envioformulario .caja1 h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 21px;
-  font-weight: 500;
-  text-align: center;
-  color: #477dee;
-  background-color: #ffffff;
-  padding: 22px;
-  border: none;
-  border-radius: 10px;
-}
-
 .gv {
+  width: 100%;
   padding: 4rem;
   background-color: #f7593f;
 }
@@ -1382,6 +1333,95 @@ header .caja1 button:hover {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.fact .image-fact .fact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 4rem;
+}
+
+.fact .image-fact .fact .num-fact {
+  font-family: "Montserrat", sans-serif;
+  color: #f7593f;
+  font-weight: 900;
+  font-size: 11.8rem;
+}
+
+.fact .image-fact .fact .text-fact {
+  margin-top: -28px;
+  width: 65%;
+  font-family: "Raleway", sans-serif;
+  color: #f7593f;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.fact .image-fact .fact .linea-fact {
+  width: 65%;
+  height: 1%;
+  background-color: #f7593f;
+  border-radius: 2px;
+  margin: 8px 0;
+}
+
+.fact .image-fact .fact .footer-fact {
+  width: 65%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #f7593f;
+  font-size: 13px;
+}
+
+.fact .image-fact .contador {
+  width: 50%;
+  height: 50%;
+  margin: 9rem;
+}
+
+.fact .image-fact .contador .bg-contador {
+  width: 95%;
+  height: 80%;
+  background-color: #f7593f;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fact .image-fact .contador .bg-contador h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 7.8rem;
+}
+
+.fact .image-fact .contador .bg-contador p {
+  width: 75%;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
 }
 
 .paises {
@@ -1739,6 +1779,152 @@ header .caja1 button:hover {
   line-height: 21px;
 }
 
+@media screen and (max-width: 768px) {
+  .gv .caja1 {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gv .caja1 .bloque1 .item1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .gv .caja1 .bloque1 .item1 .img-generar {
+    width: 220px;
+    height: 300px;
+  }
+  .gv .caja1 .bloque1 .item1 .img-experimentar {
+    width: 220px;
+    height: 300px;
+  }
+  .gv .caja1 .bloque1 .item1 .img-retarte {
+    width: 220px;
+    height: 300px;
+  }
+  .gv .caja1 .bloque2 .item2 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+  }
+  .gv .caja1 .bloque2 .item2 .img-bloque2 {
+    width: 220px;
+    height: 220px;
+    padding-right: 50px;
+  }
+  .gv .caja1 .bloque2 .item2 p {
+    padding-left: 50px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fact .image-fact .fact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 4rem;
+  }
+  .fact .image-fact .fact .num-fact {
+    padding-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: #f7593f;
+    font-weight: 900;
+    font-size: 7rem;
+  }
+  .fact .image-fact .fact .text-fact {
+    margin-top: -28px;
+    width: 85%;
+    font-family: "Raleway", sans-serif;
+    color: #f7593f;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .fact .image-fact .fact .linea-fact {
+    width: 85%;
+    height: 1%;
+    background-color: #f7593f;
+    border-radius: 2px;
+    margin: 8px 0;
+  }
+  .fact .image-fact .fact .footer-fact {
+    width: 85%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #f7593f;
+    font-size: 11px;
+  }
+  .fact .image-fact .contador {
+    width: 50%;
+    height: 200px;
+    background-color: #f7593f;
+    border-radius: 12px;
+  }
+  .fact .image-fact .contador .bg-contador {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fact .image-fact .contador .bg-contador h1 {
+    padding-top: 12px;
+    padding-left: 12px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 5rem;
+  }
+  .fact .image-fact .contador .bg-contador p {
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .proyectos .caja2 .bloque2 {
+    display: none;
+  }
+  .proyectos .caja2 .bloque3 .item .info p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
 .gt {
   padding: 4rem;
   background-color: #0bb8c0;
@@ -1928,7 +2114,7 @@ header .caja1 button:hover {
 .gt-proyectos h1 {
   padding: 52px 0;
   font-family: "Montserrat", sans-serif;
-  color: #f7593f;
+  color: #0bb8c0;
   font-size: 32px;
   font-weight: 900;
   text-align: center;
@@ -2195,5 +2381,97 @@ header .caja1 button:hover {
   font-size: 14px;
   color: #2a2a2a;
   line-height: 21px;
+}
+
+@media screen and (max-width: 768px) {
+  .gt .caja1 {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gt .caja1 .bloque1 .item1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .gt .caja1 .bloque1 .item1 .img1 {
+    width: 220px;
+    height: 300px;
+  }
+  .gt .caja1 .bloque1 .item1 .img2 {
+    width: 220px;
+    height: 300px;
+  }
+  .gt .caja1 .bloque1 .item1 .img3 {
+    width: 220px;
+    height: 300px;
+  }
+  .gt .caja1 .bloque2 .item2 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+  }
+  .gt .caja1 .bloque2 .item2 .img4 {
+    width: 220px;
+    height: 220px;
+    padding-right: 50px;
+  }
+  .gt .caja1 .bloque2 .item2 p {
+    padding-left: 50px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gt-paises .banderas {
+    padding-left: 10px;
+    padding-top: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 10px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .gt-paises .banderas .img-ecuador {
+    width: 220px;
+    height: 120px;
+  }
+  .gt-paises .banderas .img-bolivia {
+    width: 220px;
+    height: 120px;
+  }
+  .gt-paises .banderas .img-guatemala {
+    width: 220px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gt-proyectos .caja2 {
+    margin: 38px;
+  }
+  .gt-proyectos .caja2 .item .info p {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

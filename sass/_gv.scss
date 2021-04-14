@@ -2,6 +2,7 @@
 
 //¿Por qué ser un Voluntario Global?
 .gv{
+    width: 100%;
     padding: 4rem;
     background-color: $gv;
     .caja1{
@@ -99,6 +100,70 @@
         background-size: cover;
         background-position: center;
         background-attachment: scroll;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 50% 50%;
+        .fact{
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 4rem;
+            .num-fact{
+                font-family: $titulo;
+                color: $gv;
+                font-weight: 900;
+                font-size: 11.8rem;
+            }
+            .text-fact{
+                margin-top: -28px;
+                width: 65%;
+                font-family: $texto;
+                color: $gv;
+                font-weight: 700;
+                font-size: 18px;
+            }
+            .linea-fact{
+                width: 65%;
+                height: 1%;
+                background-color: $gv;
+                border-radius: 2px;
+                margin: 8px 0;
+            }
+            .footer-fact{
+                width: 65%;
+                font-family: $titulo;
+                font-weight: 700;
+                color: $gv;
+                font-size: 13px;
+            }
+        }
+        .contador{
+            width: 50%;
+            height: 50%;
+            margin: 9rem;
+            .bg-contador{
+                width: 95%;
+                height: 80%;
+                background-color: $gv;
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h1{
+                    font-family: $titulo;
+                    color: $blanco;
+                    font-weight: 900;
+                    font-size: 7.8rem;
+                }
+                p{
+                    width: 75%;
+                    font-family: $titulo;
+                    color: $blanco;
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
@@ -361,6 +426,147 @@
                         font-size: 14px;
                         color: $negro;
                         line-height: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//RESPONSIVE
+//¿Por qué ser un Voluntario Global?
+
+@media screen and (max-width: 768px) {
+    .gv{
+        .caja1{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            .bloque1{
+                .item1{
+                    display: flex;
+                    flex-direction: row;
+                    .img-generar{
+                        width: 220px;
+                        height: 300px;
+                    }
+                    .img-experimentar{
+                        width: 220px;
+                        height: 300px;
+                    }
+                    .img-retarte{
+                        width: 220px;
+                        height: 300px;
+                    }
+                }
+            }
+            .bloque2{
+                .item2{
+                    display: grid;
+                    grid-gap: 10px;
+                    grid-template-columns: repeat(2, 1fr);
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    .img-bloque2{
+                        width: 220px;
+                        height: 220px;
+                        padding-right: 50px;
+                    }
+                    p{
+                        padding-left: 50px;
+                        font-size: 15px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Fact y dato
+@media screen and (max-width: 768px) {
+    .fact{
+        .image-fact{
+            .fact{
+                display: flex;
+                flex-direction: column;
+                padding: 2rem 4rem;
+                .num-fact{
+                    padding-bottom: 10px;
+                    font-family: $titulo;
+                    color: $gv;
+                    font-weight: 900;
+                    font-size: 7rem;
+                }
+                .text-fact{
+                    margin-top: -28px;
+                    width: 85%;
+                    font-family: $texto;
+                    color: $gv;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                .linea-fact{
+                    width: 85%;
+                    height: 1%;
+                    background-color: $gv;
+                    border-radius: 2px;
+                    margin: 8px 0;
+                }
+                .footer-fact{
+                    width: 85%;
+                    font-family: $titulo;
+                    font-weight: 700;
+                    color: $gv;
+                    font-size: 11px;
+                }
+            }
+            .contador{
+                width: 50%;
+                height: 200px;
+                background-color: $gv;
+                border-radius: 12px;
+                .bg-contador{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    h1{
+                        padding-top: 12px;
+                        padding-left: 12px;
+                        font-family: $titulo;
+                        color: $blanco;
+                        font-weight: 900;
+                        font-size: 5rem;
+                    }
+                    p{
+                        width: 75%;
+                        font-family: $titulo;
+                        color: $blanco;
+                        font-size: 11px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Listado de proyectos
+@media screen and (max-width: 768px) {
+    .proyectos{
+        .caja2{
+            .bloque2{
+                display: none;
+            }
+            .bloque3{
+                .item{
+                    .info{
+                        p{
+                            font-size: 13px;
+                            line-height: 20px;
+                        }
                     }
                 }
             }

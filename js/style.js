@@ -44,3 +44,14 @@ function validarFormulario() {
         return false;
     }
 }
+
+//Contador
+window.onscroll = function () {
+    const cuenta = new CountUp('cuenta', 0, 753, 0, 2, true, true, ',');
+
+    if (!cuenta.error) {
+        cuenta.start();
+    } else {
+        console.error(cuenta.error);
+    }
+}
