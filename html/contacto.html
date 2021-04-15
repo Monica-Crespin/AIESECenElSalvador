@@ -16,6 +16,11 @@
     <!--Icono-->
     <link rel="shortcut icon" href="../images/Icon AIESEC El Salvador Website_Icono.svg" type="image/x-icon">
 
+    <!--Sweet Alert 2-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -92,19 +97,19 @@
                     <h1>¡Decinos tus dudas!</h1>
                     
                     <!--Nombre-->
-                    <input type="text" name="name" id="nombre" style="width: 700px" placeholder="Compartinos tu nombre." required><br>
+                    <input type="text" name="nombre" id="nombre" style="width: 700px" placeholder="Compartinos tu nombre."><br>
 
                     <!--Correo electrónico-->
-                    <input type="email" name="email" id="correo" style="width: 700px" placeholder="Tu correo para escribirte." required><br>
+                    <input type="email" name="correo" id="correo" style="width: 700px" placeholder="Tu correo para escribirte."><br>
 
                     <!--Asunto del mensaje-->
-                    <input type="text" name="messagetitle" id="mensajeTitulo" style="width: 700px" placeholder="Asunto del mensaje." required><br>
+                    <input type="text" name="titulomensaje" id="titulomensaje" style="width: 700px" placeholder="Asunto del mensaje."><br>
 
                     <!--Información del mensaje-->
-                    <textarea name="message" id="mensajeInformacion" rows="10" cols="30" style="width: 700px; height: 250px" placeholder="Información del mensaje." required></textarea><br>
+                    <textarea name="mensaje" id="mensaje" rows="10" cols="30" style="width: 700px; height: 250px" placeholder="Información del mensaje."></textarea><br>
 
                     <!--Btn-->
-                    <button type="submit" id="btnForm" style="width: 150px" onsubmit="validarFormulario()">Enviar</button>
+                    <button type="submit" id="btnForm" style="width: 150px">Enviar</button>
                 </form>
             </div>
         </div>
