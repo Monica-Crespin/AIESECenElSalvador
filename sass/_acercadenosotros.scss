@@ -7,38 +7,116 @@
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .bloque1{
         width: 80%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        .item1{
-            h1{
-                color: $blanco;
-                font-family: $titulo;
-                font-weight: 900;
-                font-size: 42px;
-                text-align: left;
-                line-height: 52px;
-            }
+        h1{
+            width: 70%;
+            color: $blanco;
+            font-family: $titulo;
+            font-weight: 900;
+            font-size: 112px;
+            text-align: center;
+            line-height: auto;
         }
-        .item2{
-            p{
-                color: $blanco;
-                font-family: $texto;
-                font-size: 32px;
-                text-align: left;
-                line-height: 52px;
-            }
+        p{
+            width: 40%;
+            padding-left: 32px;
+            color: $blanco;
+            font-family: $texto;
+            font-size: 28px;
+            text-align: center;
+            line-height: auto;
         }
     }
 }
 
 //Contador
+.contador{
+    margin: 4rem 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    .item3{
+        width: 95%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-family: $titulo;
+            color: $negro;
+            font-weight: 900;
+            font-size: 7.8rem;
+        }
+        p{
+            width: 75%;
+            font-family: $titulo;
+            color: $negro;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 900;
+        }
+    }
+    .item4{
+        width: 95%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-family: $titulo;
+            color: $negro;
+            font-weight: 900;
+            font-size: 7.8rem;
+        }
+        p{
+            width: 75%;
+            font-family: $titulo;
+            color: $negro;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 900;
+        }
+    }
+    .item5{
+        width: 95%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-family: $titulo;
+            color: $negro;
+            font-weight: 900;
+            font-size: 7.8rem;
+        }
+        p{
+            width: 75%;
+            font-family: $titulo;
+            color: $negro;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 900;
+        }
+    }
+}
 
 //Desarrollamos líderes juveniles
 .lideresjuveniles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     h1{
         color: $azul;
         font-family: $titulo;
@@ -50,17 +128,19 @@
         line-height: 42px;
     }
     h2{
+        width: 80%;
         color: $negro;
         font-family: $texto;
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
-        line-height: 32px;
+        line-height: 28px;
         padding-bottom: 10px;
     }
     .bloque2{
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         .item6{
             width: 300px;
             height: 300px;
@@ -69,27 +149,29 @@
             justify-content: center;
             align-items: center;
             .info{
+                margin-top: 1rem;
                 h3{
                     color: $negro;
                     font-family: $titulo;
                     font-size: 18px;
-                    font-weight: 500;
+                    text-align: right;
+                    font-weight: 900;
                 }
                 p{
                     color: $negro;
                     font-family: $texto;
                     font-size: 14px;
+                    text-align: right;
+                    line-height: 21px;
                 }
             }
         }
         .img-lideres-juveniles{
-            padding: 0 10px;
-            width: 300px;
-            height: 300px;
-            background-image: url('../images/Cualidades de un líder-01.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: scroll;
+            img{
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
         }
         .item7{
             width: 300px;
@@ -99,124 +181,204 @@
             justify-content: center;
             align-items: center;
             .info{
+                margin-top: 1rem;
                 h3{
                     color: $negro;
                     font-family: $titulo;
                     font-size: 18px;
-                    font-weight: 500;
+                    text-align: left;
+                    font-weight: 900;
                 }
                 p{
                     color: $negro;
                     font-family: $texto;
                     font-size: 14px;
+                    text-align: left;
+                    line-height: 21px;
                 }
             }
         }
     }
 }
 
-//¿Quieres ser un voluntario?
-.voluntario{
+//¿Quieres ser un voluntario o becario?
+.contenedor{
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    .bloque3{
-        width: 90%;
-        .img-logo-gv{
-            padding-right: 10px;
-            width: 200px;
-            height: 200px;
-            background-image: url('../images/GV_vertical_color.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: scroll;
-        }
-        .item8{
+    justify-content: center;
+    .bloque{
+        .info{
+            margin-bottom: 2rem;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-            h2{
-                color: $negro;
-                font-family: $titulo;
-                font-size: 18px;
-                font-weight: 900;
-                padding-bottom: 10px;
+            img{
+                padding-right: 10px;
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
             }
-            p{
-                color: $negro;
-                font-family: $texto;
-                font-size: 14px;
-                padding-bottom: 10px;
-            }
-            button{
-                margin: 1rem 1.7rem;
-                padding: 1rem 3.5rem;
-                cursor: pointer;
-                border: none;
-                border-radius: 1px;
-                background-color: $negro;
-                color: $blanco;
-                font-family: $texto;
-                font-size: 20px;
-                &:hover{
-                    background-color: $negro-hover;
-                    transition: ease-in-out .5s;
+            .texto{
+                width: 50%;
+                margin-left: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h2{
+                    color: $negro;
+                    font-family: $titulo;
+                    font-size: 32px;
+                    font-weight: 900;
+                    padding-bottom: 10px;
+                }
+                p{
+                    width: 65%;
+                    color: $negro;
+                    font-family: $texto;
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                    line-height: 28px;
+                    text-align: center;
+                }
+                a{
+                    button{
+                        margin: 1rem 1.7rem;
+                        padding: 1rem 3.5rem;
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 1px;
+                        background-color: $negro;
+                        color: $blanco;
+                        font-family: $texto;
+                        font-size: 20px;
+                        font-weight: 900;
+                        &:hover{
+                            background-color: $negro-hover;
+                            transition: ease-in-out .5s;
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-//¿Quieres ser un becario?
-.becario{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    .bloque4{
-        width: 90%;
-        .img-logo-gt{
-            padding-right: 10px;
-            width: 200px;
-            height: 200px;
-            background-image: url('../images/product_GT-Vertical-color.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: scroll;
-        }
-        .item8{
+//RESPONSIVE
+//¿Qué es AIESEC?
+@media screen and (max-width: 768px) {
+    .encabezado{
+        .bloque1{
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            h2{
-                color: $negro;
+            justify-content: center;
+            h1{
+                width: 90%;
+                color: $blanco;
                 font-family: $titulo;
-                font-size: 18px;
                 font-weight: 900;
-                padding-bottom: 10px;
+                font-size: 70px;
+                text-align: center;
+                line-height: auto;
             }
             p{
-                color: $negro;
-                font-family: $texto;
-                font-size: 14px;
-                padding-bottom: 10px;
-            }
-            button{
-                margin: 1rem 1.7rem;
-                padding: 1rem 3.5rem;
-                cursor: pointer;
-                border: none;
-                border-radius: 1px;
-                background-color: $negro;
+                width: 75%;
+                padding-left: 32px;
                 color: $blanco;
                 font-family: $texto;
-                font-size: 20px;
-                &:hover{
-                    background-color: $negro-hover;
-                    transition: ease-in-out .5s;
+                font-size: 28px;
+                text-align: center;
+                line-height: auto;
+            }
+        }
+    }
+}
+
+//Contador
+@media screen and (max-width: 768px) {
+    .contador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+//Desarrollamos líderes juveniles
+@media screen and (max-width: 768px) {
+    .lideresjuveniles{
+        h2{
+            font-size: 16px;
+        }
+        .bloque2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .item6{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .info{
+                    h3{
+                        font-size: 21px;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 16px;
+                        text-align: left;
+                    }
+                }
+            }
+            .item7{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .info{
+                    h3{
+                        font-size: 21px;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 16px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//¿Quieres ser un voluntario o becario?
+@media screen and (max-width: 768px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .bloque{
+            .info{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                .texto{
+                    h2{
+                        font-size: 21px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    a{
+                        button{
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
         }

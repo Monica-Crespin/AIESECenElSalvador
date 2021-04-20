@@ -523,7 +523,7 @@
                 }
             }
             .contador{
-                width: 50%;
+                width: 200px;
                 height: 200px;
                 background-color: $gv;
                 border-radius: 12px;
@@ -548,6 +548,26 @@
                         text-align: center;
                     }
                 }
+            }
+        }
+    }
+}
+
+//Puedes vivir tu experiencia es
+@media screen and (max-width: 768px) {
+    .paises{
+        .banderas{
+            .img-ecuador{
+                width: 200px;
+                height: 100px;
+            }
+            .img-bolivia{
+                width: 200px;
+                height: 100px;
+            }
+            .img-guatemala{
+                width: 200px;
+                height: 100px;
             }
         }
     }

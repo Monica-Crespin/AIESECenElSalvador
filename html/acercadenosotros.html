@@ -51,20 +51,25 @@
     <!--¿Qué es AIESEC?-->
     <section class="encabezado">
         <div class="bloque1">
-            <div class="item1">
-                <h1>¿Qué es AIESEC?</h1>
-            </div>
-            <div class="item2">
-                <p>Somos una organización cuyo principal interés es ayudar a los jóvenes para que desarrollen su potencial</p>
-            </div>
+            <h1>¿Qué es AIESEC?</h1>
+            <p>Somos una organización cuyo principal interés es ayudar a los jóvenes para que desarrollen su potencial</p>
         </div>
     </section>
 
     <!--Contador-->
     <section class="contador">
-        <div class="item3"></div>
-        <div class="item4"></div>
-        <div class="item5"></div>
+        <div class="item3">
+            <h1 class="cuentaUno" id="cuentaUno">0</h1>
+            <p>Organizaciones asociadas</p>
+        </div>
+        <div class="item4">
+            <h1 class="cuentaDos" id="cuentaDos">0</h1>
+            <p>Países y territorios</p>
+        </div>
+        <div class="item5">
+            <h1 class="cuentaTres" id="cuentaTres">0</h1>
+            <p>Experiencias impartidas</p>
+        </div>
     </section>
 
     <!--Desarrollamos líderes juveniles-->
@@ -82,7 +87,9 @@
                     <p>Ir más allá de los que conoces te abre nuevos mundos. Encuentra tus valores, explora tus pasiones y sé más consciente de ti mismo.</p>
                 </div>
             </div>
-            <div class="img-lideresjuveniles"></div>
+            <div class="img-lideresjuveniles">
+                <img src="../images/Cualidades de un líder-01.png" alt="Cualidades de un líder" width="400px" height="400px">
+            </div>
             <div class="item7">
                 <div class="info">
                     <h3>Orientado a las soluciones</h3>
@@ -96,31 +103,61 @@
         </div>
     </section>
 
-    <!--¿Quieres ser un voluntario?-->
-    <div class="voluntario">
-        <div class="bloque3">
-            <div class="img-logo-gv"></div>
-            <div class="item8">
-                <h2>¿Quieres ser voluntario?</h2>
-                <p>Desarrolla tu liderazgo a través de un proyecto de voluntariado que contribuya a los Objetivos de Desarrollo Sostenible.</p>
-                <button>Conocé más</button>
+    <!--¿Quieres ser un voluntario o becario?-->
+    <div class="contenedor">
+        <div class="bloque">
+            <div class="info">
+                <img src="../images/GV_vertical_color.png" alt="Logo de Voluntario Global" width="235px">
+                <div class="texto">
+                    <h2>¿Quieres ser voluntario?</h2>
+                    <p>Desarrolla tu liderazgo a través de un proyecto de voluntariado que contribuya a los Objetivos de Desarrollo Sostenible.</p>
+                    <a href="gv.html">
+                        <button>Conocé más</button>
+                    </a>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <!--¿Quieres ser un becario?-->
-    <div class="becario">
-        <div class="bloque4">
-            <div class="img-logo-gt"></div>
-            <div class="item9">
-                <h2>¿Quieres ser un becario?</h2>
-                <p>Desarrolla tu liderazgo a través de una experiencia de prácticas empresariales en el extranjero por la que recibirás un salario.</p>
-                <button>Conocé más</button>
+            <div class="info">
+                <img src="../images/product_GT-Vertical-color.png" alt="Logo Global Talent" width="200px">
+                <div class="texto">
+                    <h2>¿Quieres ser un becario?</h2>
+                    <p>Desarrolla tu liderazgo a través de una experiencia de prácticas empresariales en el extranjero por la que recibirás un salario.</p>
+                    <a href="gt.html">
+                        <button>Conocé más</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
     <!--JavaScript-->
-    <script src="../js/style.js"></script>
+    <script src="../js/estilo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="../js/countUp.js"></script>
+
+    <script>
+        //Contador uno
+        window.onscroll = function () {
+            let cuentaUno = new CountUp('cuentaUno', 0, 7000);
+            if (!cuentaUno.error) {
+                cuentaUno.start();
+            } else {
+                console.error(cuentaUno.error);
+            }
+
+            let cuentaDos = new CountUp('cuentaDos', 0, 120);
+            if (!cuentaDos.error) {
+                cuentaDos.start();
+            } else {
+                console.error(cuentaDos.error);
+            }
+
+            let cuentaTres = new CountUp('cuentaTres', 0, 3600);
+            if (!cuentaTres.error) {
+                cuentaTres.start();
+            } else {
+                console.error(cuentaTres.error);
+            }
+        }
+    </script>
 </body>
 </html>

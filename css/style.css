@@ -388,7 +388,7 @@ header .caja1 button:hover {
 }
 
 .nuestrosprogramas .bloque1 .caja2 .item1 .text button:hover {
-  background-color: #2a2a2a8f;
+  background-color: #2a2a2ad7;
   -webkit-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
 }
@@ -459,7 +459,7 @@ header .caja1 button:hover {
 }
 
 .nuestrosprogramas .bloque1 .caja2 .item2 .text button:hover {
-  background-color: #2a2a2a8f;
+  background-color: #2a2a2ad7;
   -webkit-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
 }
@@ -736,6 +736,15 @@ header .caja1 button:hover {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .encabezado .bloque1 {
@@ -755,21 +764,151 @@ header .caja1 button:hover {
           align-items: center;
 }
 
-.encabezado .bloque1 .item1 h1 {
+.encabezado .bloque1 h1 {
+  width: 70%;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 42px;
-  text-align: left;
-  line-height: 52px;
+  font-size: 112px;
+  text-align: center;
+  line-height: auto;
 }
 
-.encabezado .bloque1 .item2 p {
+.encabezado .bloque1 p {
+  width: 40%;
+  padding-left: 32px;
   color: #ffffff;
   font-family: "Raleway", sans-serif;
-  font-size: 32px;
-  text-align: left;
-  line-height: 52px;
+  font-size: 28px;
+  text-align: center;
+  line-height: auto;
+}
+
+.contador {
+  margin: 4rem 0;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.contador .item3 {
+  width: 95%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contador .item3 h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #2a2a2a;
+  font-weight: 900;
+  font-size: 7.8rem;
+}
+
+.contador .item3 p {
+  width: 75%;
+  font-family: "Montserrat", sans-serif;
+  color: #2a2a2a;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.contador .item4 {
+  width: 95%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contador .item4 h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #2a2a2a;
+  font-weight: 900;
+  font-size: 7.8rem;
+}
+
+.contador .item4 p {
+  width: 75%;
+  font-family: "Montserrat", sans-serif;
+  color: #2a2a2a;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.contador .item5 {
+  width: 95%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contador .item5 h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #2a2a2a;
+  font-weight: 900;
+  font-size: 7.8rem;
+}
+
+.contador .item5 p {
+  width: 75%;
+  font-family: "Montserrat", sans-serif;
+  color: #2a2a2a;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.lideresjuveniles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .lideresjuveniles h1 {
@@ -784,20 +923,29 @@ header .caja1 button:hover {
 }
 
 .lideresjuveniles h2 {
+  width: 80%;
   color: #2a2a2a;
   font-family: "Raleway", sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
-  line-height: 32px;
+  line-height: 28px;
   padding-bottom: 10px;
 }
 
 .lideresjuveniles .bloque2 {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .lideresjuveniles .bloque2 .item6 {
@@ -818,24 +966,27 @@ header .caja1 button:hover {
           align-items: center;
 }
 
+.lideresjuveniles .bloque2 .item6 .info {
+  margin-top: 1rem;
+}
+
 .lideresjuveniles .bloque2 .item6 .info h3 {
   color: #2a2a2a;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  text-align: right;
+  font-weight: 900;
 }
 
 .lideresjuveniles .bloque2 .item6 .info p {
   color: #2a2a2a;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
+  text-align: right;
+  line-height: 21px;
 }
 
-.lideresjuveniles .bloque2 .img-lideres-juveniles {
-  padding: 0 10px;
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/Cualidades de un líder-01.png");
+.lideresjuveniles .bloque2 .img-lideres-juveniles img {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
@@ -859,20 +1010,45 @@ header .caja1 button:hover {
           align-items: center;
 }
 
+.lideresjuveniles .bloque2 .item7 .info {
+  margin-top: 1rem;
+}
+
 .lideresjuveniles .bloque2 .item7 .info h3 {
   color: #2a2a2a;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  text-align: left;
+  font-weight: 900;
 }
 
 .lideresjuveniles .bloque2 .item7 .info p {
   color: #2a2a2a;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
+  text-align: left;
+  line-height: 21px;
 }
 
-.voluntario {
+.contenedor {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor .bloque .info {
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -888,21 +1064,16 @@ header .caja1 button:hover {
           align-items: center;
 }
 
-.voluntario .bloque3 {
-  width: 90%;
-}
-
-.voluntario .bloque3 .img-logo-gv {
+.contenedor .bloque .info img {
   padding-right: 10px;
-  width: 200px;
-  height: 200px;
-  background-image: url("../images/GV_vertical_color.png");
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
 }
 
-.voluntario .bloque3 .item8 {
+.contenedor .bloque .info .texto {
+  width: 50%;
+  margin-left: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -910,30 +1081,33 @@ header .caja1 button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.voluntario .bloque3 .item8 h2 {
+.contenedor .bloque .info .texto h2 {
   color: #2a2a2a;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 32px;
   font-weight: 900;
   padding-bottom: 10px;
 }
 
-.voluntario .bloque3 .item8 p {
+.contenedor .bloque .info .texto p {
+  width: 65%;
   color: #2a2a2a;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   padding-bottom: 10px;
+  line-height: 28px;
+  text-align: center;
 }
 
-.voluntario .bloque3 .item8 button {
+.contenedor .bloque .info .texto a button {
   margin: 1rem 1.7rem;
   padding: 1rem 3.5rem;
   cursor: pointer;
@@ -943,91 +1117,172 @@ header .caja1 button:hover {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-}
-
-.voluntario .bloque3 .item8 button:hover {
-  background-color: #2a2a2a8f;
-  -webkit-transition: ease-in-out .5s;
-  transition: ease-in-out .5s;
-}
-
-.becario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.becario .bloque4 {
-  width: 90%;
-}
-
-.becario .bloque4 .img-logo-gt {
-  padding-right: 10px;
-  width: 200px;
-  height: 200px;
-  background-image: url("../images/product_GT-Vertical-color.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.becario .bloque4 .item8 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.becario .bloque4 .item8 h2 {
-  color: #2a2a2a;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
   font-weight: 900;
-  padding-bottom: 10px;
 }
 
-.becario .bloque4 .item8 p {
-  color: #2a2a2a;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  padding-bottom: 10px;
-}
-
-.becario .bloque4 .item8 button {
-  margin: 1rem 1.7rem;
-  padding: 1rem 3.5rem;
-  cursor: pointer;
-  border: none;
-  border-radius: 1px;
-  background-color: #2a2a2a;
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-}
-
-.becario .bloque4 .item8 button:hover {
-  background-color: #2a2a2a8f;
+.contenedor .bloque .info .texto a button:hover {
+  background-color: #2a2a2ad7;
   -webkit-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
+}
+
+@media screen and (max-width: 768px) {
+  .encabezado .bloque1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .encabezado .bloque1 h1 {
+    width: 90%;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+    line-height: auto;
+  }
+  .encabezado .bloque1 p {
+    width: 75%;
+    padding-left: 32px;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    line-height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contador {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lideresjuveniles h2 {
+    font-size: 16px;
+  }
+  .lideresjuveniles .bloque2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .lideresjuveniles .bloque2 .item6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .lideresjuveniles .bloque2 .item6 .info h3 {
+    font-size: 21px;
+    text-align: center;
+  }
+  .lideresjuveniles .bloque2 .item6 .info p {
+    font-size: 16px;
+    text-align: left;
+  }
+  .lideresjuveniles .bloque2 .item7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .lideresjuveniles .bloque2 .item7 .info h3 {
+    font-size: 21px;
+    text-align: center;
+  }
+  .lideresjuveniles .bloque2 .item7 .info p {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contenedor .bloque .info {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contenedor .bloque .info .texto h2 {
+    font-size: 21px;
+  }
+  .contenedor .bloque .info .texto p {
+    font-size: 14px;
+  }
+  .contenedor .bloque .info .texto a button {
+    font-size: 12px;
+  }
 }
 
 .formulario {
@@ -1879,7 +2134,7 @@ header .caja1 button:hover {
     font-size: 11px;
   }
   .fact .image-fact .contador {
-    width: 50%;
+    width: 200px;
     height: 200px;
     background-color: #f7593f;
     border-radius: 12px;
@@ -1913,6 +2168,21 @@ header .caja1 button:hover {
     color: #ffffff;
     font-size: 11px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paises .banderas .img-ecuador {
+    width: 200px;
+    height: 100px;
+  }
+  .paises .banderas .img-bolivia {
+    width: 200px;
+    height: 100px;
+  }
+  .paises .banderas .img-guatemala {
+    width: 200px;
+    height: 100px;
   }
 }
 
