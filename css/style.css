@@ -1646,7 +1646,7 @@ header .caja1 button:hover {
 }
 
 .fact .image-fact .contador .bg-contador {
-  width: 95%;
+  width: 350px;
   height: 80%;
   background-color: #f7593f;
   border-radius: 12px;
