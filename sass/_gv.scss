@@ -73,17 +73,22 @@
                 width: 300px;
                 height: 300px;
                 border-radius: 50%;
-                background-image: url('../images/49015530522_d2b7e1d2bc_o.jpg');
+                background-image: url('../images/GV_testimonio_01.png');
                 background-size: cover;
                 background-position: center;
                 background-attachment: scroll;
             }
-            p{
+            h2{
                 padding-top: 20px;
+                font-family: $titulo;
+                color: $negro;
+                font-size: 15px;
+            }
+            p{
                 font-family: $texto;
                 color: $negro;
-                font-size: 12px;
-                line-height: 15px;
+                font-size: 13px;
+                line-height: auto;
             }
         }
     }
@@ -207,6 +212,43 @@
             background-size: cover;
             background-position: center;
             background-attachment: scroll;
+        }
+    }
+}
+
+//Testimonios
+.testimonios{
+    .contenedor{
+        padding-bottom: 40px;
+        .img-testimonio-01{
+            width: 100%;
+            height: 400px;
+            background-image: url('../images/Testimonio_01.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+        }
+        .texto{
+            width: 100%;
+            height: 400px;
+            background-color: $gv;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1{
+                padding: 20px 0;
+                color: $blanco;
+                font-weight: 600;
+                text-align: center;
+            }
+            p{
+                padding: 5px 20px;
+                color: $blanco;
+                text-align: left;
+                line-height: 20px;
+                font-size: 12px;
+            }
         }
     }
 }
@@ -473,6 +515,10 @@
                         height: 220px;
                         padding-right: 50px;
                     }
+                    h2{
+                        padding-left: 50px;
+                        font-size: 18px;
+                    }
                     p{
                         padding-left: 50px;
                         font-size: 15px;
@@ -528,6 +574,7 @@
                 background-color: $gv;
                 border-radius: 12px;
                 .bg-contador{
+                    width: 150px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
