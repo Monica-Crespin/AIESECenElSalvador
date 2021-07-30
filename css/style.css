@@ -1733,16 +1733,25 @@ header .caja1 button:hover {
 .paises .banderas {
   padding-left: 22px;
   padding-top: 22px;
-  display: -ms-grid;
-  display: grid;
-  grid-column-gap: 10px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .paises .banderas .img-ecuador {
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
+  margin-right: 22px;
   background-image: url("../images/Bandera de Ecuador.png");
   background-size: cover;
   background-position: center;
@@ -1750,8 +1759,9 @@ header .caja1 button:hover {
 }
 
 .paises .banderas .img-bolivia {
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
+  margin-right: 22px;
   background-image: url("../images/Bandera de Bolivia.png");
   background-size: cover;
   background-position: center;
@@ -1759,8 +1769,8 @@ header .caja1 button:hover {
 }
 
 .paises .banderas .img-guatemala {
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
   background-image: url("../images/Bandera de Guatemala.png");
   background-size: cover;
   background-position: center;
@@ -1814,10 +1824,6 @@ header .caja1 button:hover {
   font-size: 12px;
 }
 
-.proyectos {
-  margin: 20px 0;
-}
-
 .proyectos h1 {
   padding: 52px 0;
   font-family: "Montserrat", sans-serif;
@@ -1829,356 +1835,50 @@ header .caja1 button:hover {
 }
 
 .proyectos .caja2 {
+  padding: 0 40px;
   display: -ms-grid;
   display: grid;
-  grid-gap: 9px;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
-.proyectos .caja2 .bloque2 .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  margin-left: 52px;
+.proyectos .caja2 .item {
+  padding-bottom: 40px;
 }
 
-.proyectos .caja2 .bloque2 .links a {
+.proyectos .caja2 .item .info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #2a2a2a;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.proyectos .caja2 .item .info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #2a2a2a;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+.proyectos .caja2 .item .info a button {
   cursor: pointer;
-  padding: 14px 28px;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  color: #2a2a2a;
-  text-transform: none;
-  line-height: 28px;
-  outline: none;
-}
-
-.proyectos .caja2 .bloque3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.proyectos .caja2 .bloque3 .item {
-  margin-left: 52px;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.proyectos .caja2 .bloque3 .item .img1 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.proyectos .caja2 .bloque3 .item .info {
-  margin-right: 92px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.proyectos .caja2 .bloque3 .item .info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-align: left;
-}
-
-.proyectos .caja2 .bloque3 .item .info p {
+  border: none;
+  border-radius: 1px;
+  background-color: #2a2a2a;
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #2a2a2a;
-  line-height: 21px;
+  padding: 20px;
 }
 
-.proyectos .caja2 .bloque3 .item {
-  padding: 10px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.proyectos .caja2 .bloque3 .item .img2 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/person-holding-clear-light-bulb-1314410.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.proyectos .caja2 .bloque3 .item .info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-align: left;
-}
-
-.proyectos .caja2 .bloque3 .item .info p {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #2a2a2a;
-  line-height: 21px;
-}
-
-.proyectos .caja2 .bloque3 .item {
-  padding: 10px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.proyectos .caja2 .bloque3 .item .img3 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.proyectos .caja2 .bloque3 .item .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.proyectos .caja2 .bloque3 .item .info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-align: left;
-}
-
-.proyectos .caja2 .bloque3 .item .info p {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #2a2a2a;
-  line-height: 21px;
-}
-
-.proyectos .caja2 .bloque3 .item {
-  padding: 10px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.proyectos .caja2 .bloque3 .item .img4 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/person-holding-clear-light-bulb-1314410.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.proyectos .caja2 .bloque3 .item .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.proyectos .caja2 .bloque3 .item .info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-align: left;
-}
-
-.proyectos .caja2 .bloque3 .item .info p {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #2a2a2a;
-  line-height: 21px;
-}
-
-.proyectos .caja2 .bloque3 .item {
-  padding: 10px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.proyectos .caja2 .bloque3 .item .img5 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.proyectos .caja2 .bloque3 .item .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.proyectos .caja2 .bloque3 .item .info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-align: left;
-}
-
-.proyectos .caja2 .bloque3 .item .info p {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #2a2a2a;
-  line-height: 21px;
-}
-
-@media screen and (max-width: 768px) {
-  .gv .caja1 {
-    padding: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .gv .caja1 .bloque1 .item1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .gv .caja1 .bloque1 .item1 .img-generar {
-    width: 220px;
-    height: 300px;
-  }
-  .gv .caja1 .bloque1 .item1 .img-experimentar {
-    width: 220px;
-    height: 300px;
-  }
-  .gv .caja1 .bloque1 .item1 .img-retarte {
-    width: 220px;
-    height: 300px;
-  }
-  .gv .caja1 .bloque2 .item2 {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 10px;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 20px;
-  }
-  .gv .caja1 .bloque2 .item2 .img-bloque2 {
-    width: 220px;
-    height: 220px;
-    padding-right: 50px;
-  }
-  .gv .caja1 .bloque2 .item2 h2 {
-    padding-left: 50px;
-    font-size: 18px;
-  }
-  .gv .caja1 .bloque2 .item2 p {
-    padding-left: 50px;
-    font-size: 15px;
-    line-height: 22px;
-  }
+.proyectos .caja2 .item .info a button:hover {
+  background-color: #2a2a2ad7;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -2276,10 +1976,7 @@ header .caja1 button:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .proyectos .caja2 .bloque2 {
-    display: none;
-  }
-  .proyectos .caja2 .bloque3 .item .info p {
+  .proyectos .caja2 .item .info p {
     font-size: 13px;
     line-height: 20px;
   }
@@ -2430,16 +2127,25 @@ header .caja1 button:hover {
 .gt-paises .banderas {
   padding-left: 22px;
   padding-top: 22px;
-  display: -ms-grid;
-  display: grid;
-  grid-column-gap: 10px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .gt-paises .banderas .img-ecuador {
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
+  margin-right: 22px;
   background-image: url("../images/Bandera de Ecuador.png");
   background-size: cover;
   background-position: center;
@@ -2447,8 +2153,9 @@ header .caja1 button:hover {
 }
 
 .gt-paises .banderas .img-bolivia {
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
+  margin-right: 22px;
   background-image: url("../images/Bandera de Bolivia.png");
   background-size: cover;
   background-position: center;
@@ -2456,16 +2163,12 @@ header .caja1 button:hover {
 }
 
 .gt-paises .banderas .img-guatemala {
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
   background-image: url("../images/Bandera de Guatemala.png");
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
-}
-
-.gt-proyectos {
-  margin: 20px 0;
 }
 
 .gt-proyectos h1 {
@@ -2479,265 +2182,50 @@ header .caja1 button:hover {
 }
 
 .gt-proyectos .caja2 {
-  margin: 0 295px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.gt-proyectos .caja2 .item {
-  padding-top: 20px;
+  padding: 0 40px;
   display: -ms-grid;
   display: grid;
-  grid-gap: 2px;
+  grid-gap: 20px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
-.gt-proyectos .caja2 .item .img1 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.gt-proyectos .caja2 .item .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+.gt-proyectos .caja2 .item {
+  margin-bottom: 20px;
 }
 
 .gt-proyectos .caja2 .item .info h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 700;
   color: #2a2a2a;
   text-align: left;
+  padding-bottom: 10px;
 }
 
 .gt-proyectos .caja2 .item .info p {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #2a2a2a;
-  line-height: 21px;
+  line-height: 24px;
+  padding-bottom: 10px;
 }
 
-.gt-proyectos .caja2 .item {
-  padding-top: 20px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.gt-proyectos .caja2 .item .img2 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.gt-proyectos .caja2 .item .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.gt-proyectos .caja2 .item .info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-align: left;
-}
-
-.gt-proyectos .caja2 .item .info p {
+.gt-proyectos .caja2 .item .info a button {
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  background-color: #2a2a2a;
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #2a2a2a;
-  line-height: 21px;
+  padding: 20px;
 }
 
-.gt-proyectos .caja2 .item {
-  padding-top: 20px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.gt-proyectos .caja2 .item .img3 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.gt-proyectos .caja2 .item .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.gt-proyectos .caja2 .item .info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-align: left;
-}
-
-.gt-proyectos .caja2 .item .info p {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #2a2a2a;
-  line-height: 21px;
-}
-
-.gt-proyectos .caja2 .item {
-  padding-top: 20px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.gt-proyectos .caja2 .item .img4 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.gt-proyectos .caja2 .item .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.gt-proyectos .caja2 .item .info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-align: left;
-}
-
-.gt-proyectos .caja2 .item .info p {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #2a2a2a;
-  line-height: 21px;
-}
-
-.gt-proyectos .caja2 .item {
-  padding-top: 20px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.gt-proyectos .caja2 .item .img5 {
-  width: 300px;
-  height: 300px;
-  background-image: url("../images/StockSnap_Y2P39NGLLO.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-.gt-proyectos .caja2 .item .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.gt-proyectos .caja2 .item .info h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a2a2a;
-  text-align: left;
-}
-
-.gt-proyectos .caja2 .item .info p {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #2a2a2a;
-  line-height: 21px;
+.gt-proyectos .caja2 .item .info a button:hover {
+  background-color: #2a2a2ad7;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
 }
 
 @media screen and (max-width: 768px) {
